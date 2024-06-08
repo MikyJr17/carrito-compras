@@ -1,0 +1,85 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: top 0.3s ease;
+}
+
+.navbar.fixed {
+  position: fixed;
+  top: 0; 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  position: relative;
+  font-size: 1.2rem;
+}
+
+#cartItemCount {
+  position: absolute;
+  top: 5px;
+  right: -1px;
+  font-size: 0.7rem;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  margin-bottom: 20px;
+  width: 18rem;
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 100%;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.quantity {
+  width: 50px;
+  text-align: center;
+}
+
+.modal-footer .btn {
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-img-top {
+    max-height: 150px;
+  }
+}
